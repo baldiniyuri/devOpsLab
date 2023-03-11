@@ -5,5 +5,5 @@ app = Flask(__name__)
 csrf = CSRFProtect(app)
 
 @app.route("/")
-def pagina_inicial():
-    return "Laboratório Pipeline DevOps"
+def home():
+    return "Hello, Yuri Baldini!"
