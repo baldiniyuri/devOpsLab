@@ -28,6 +28,9 @@ jobs:
           coverage report -m
           coverage xml -i
 
+      - name: Install Requirements
+        run:  pip install flask pytest pytest-cov flask-wtf
+
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master  #https://github.com/marketplace/actions/sonarcloud-scan
         env:
